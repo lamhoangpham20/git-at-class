@@ -26,7 +26,7 @@ process.stdin.on( "data", function( input_from_user )
 
    given_numbers.push( number_from_keyboard ) ;
 
-   if ( (number_from_keyboard == 0) || (given_numbers.length==7) || (number_from_keyboard>40) || (number_from_keyboard<1) )
+   if ( (number_from_keyboard == 0) || (given_numbers.length>=7) || (number_from_keyboard>40) || (number_from_keyboard<1) )
    {
       process.stdout.write( "\n Reverse order:  " ) ;
 
